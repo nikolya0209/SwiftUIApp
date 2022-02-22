@@ -11,6 +11,8 @@ struct ContentView: View {
     
     @State private var showVideoView = false
     
+    @ObservedObject var videoData = VideoModel()
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
@@ -26,7 +28,7 @@ struct ContentView: View {
                         }, label: {
                             Text("Edit content")
                         }).frame(width: abs(geometry.size.width / 2 - 10), height: 50).accentColor(Color.init(#colorLiteral(red: 1, green: 0.4786082506, blue: 0.4582144618, alpha: 1))).background(Color.init(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))).cornerRadius(10).sheet(isPresented: self.$showVideoView, content: {
-                            VideoView()
+                            VideoView(videoTitle: $videoData.title, videoDescription: $videoData.description)
                         })
                     }
                 }.padding().frame(height: 50)
@@ -35,8 +37,8 @@ struct ContentView: View {
                 HStack {
                     Image("apple").resizable().frame(width: 120, height: 120)
                     VStack(alignment: .leading) {
-                        Text("Hello, world!").font(.title)
-                        Text("Hello, world!").font(.subheadline).foregroundColor(.gray)
+                        Text("Title: \(videoData.title)").font(.title)
+                        Text("Description: \(videoData.description)").font(.subheadline).foregroundColor(.gray)
                     }
                 }
                 
