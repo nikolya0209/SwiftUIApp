@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var showVideoView = false
     
     @ObservedObject var videoData = VideoModel()
+    @EnvironmentObject var channelData: ChannelData
     
     var body: some View {
         NavigationView {
@@ -19,7 +20,7 @@ struct ContentView: View {
                 GeometryReader { geometry in
                     HStack(spacing: 20) {
                         NavigationLink(
-                            destination: ChanelView(),
+                            destination: ChannelView(),
                             label: {
                                 Text("Edit chanal")
                             }).frame(width: abs(geometry.size.width / 2 - 10), height: 50).accentColor(Color.init(#colorLiteral(red: 1, green: 0.4786082506, blue: 0.4582144618, alpha: 1))).background(Color.init(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))).cornerRadius(10)
@@ -28,7 +29,7 @@ struct ContentView: View {
                         }, label: {
                             Text("Edit content")
                         }).frame(width: abs(geometry.size.width / 2 - 10), height: 50).accentColor(Color.init(#colorLiteral(red: 1, green: 0.4786082506, blue: 0.4582144618, alpha: 1))).background(Color.init(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))).cornerRadius(10).sheet(isPresented: self.$showVideoView, content: {
-                            VideoView(videoTitle: $videoData.title, videoDescription: $videoData.description)
+                            VideoView(videoTitle: $videoData.title, videoDescription: $videoData.description).environmentObject(self.channelData)
                         })
                     }
                 }.padding().frame(height: 50)
@@ -47,7 +48,7 @@ struct ContentView: View {
             }.padding()
             
             
-            .navigationBarTitle("Nikolya0209")
+            .navigationBarTitle("\(channelData.chanelName)")
         }
         
     }

@@ -13,9 +13,10 @@
 		5260F95527C3F6B8002F84FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5260F95427C3F6B8002F84FB /* Assets.xcassets */; };
 		5260F95827C3F6B8002F84FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5260F95727C3F6B8002F84FB /* Preview Assets.xcassets */; };
 		5260F95B27C3F6B8002F84FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5260F95927C3F6B8002F84FB /* LaunchScreen.storyboard */; };
-		5260F96327C3FA37002F84FB /* ChanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5260F96227C3FA37002F84FB /* ChanelView.swift */; };
+		5260F96327C3FA37002F84FB /* ChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5260F96227C3FA37002F84FB /* ChannelView.swift */; };
 		5260F96527C52A4A002F84FB /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5260F96427C52A4A002F84FB /* VideoView.swift */; };
 		5260F96827C53BF7002F84FB /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5260F96727C53BF7002F84FB /* VideoModel.swift */; };
+		5260F96A27C544E5002F84FB /* ChannelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5260F96927C544E5002F84FB /* ChannelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +28,10 @@
 		5260F95727C3F6B8002F84FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5260F95A27C3F6B8002F84FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5260F95C27C3F6B8002F84FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5260F96227C3FA37002F84FB /* ChanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChanelView.swift; sourceTree = "<group>"; };
+		5260F96227C3FA37002F84FB /* ChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelView.swift; sourceTree = "<group>"; };
 		5260F96427C52A4A002F84FB /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		5260F96727C53BF7002F84FB /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		5260F96927C544E5002F84FB /* ChannelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,7 @@
 			children = (
 				5260F94E27C3F6B7002F84FB /* AppDelegate.swift */,
 				5260F95027C3F6B7002F84FB /* SceneDelegate.swift */,
-				5260F96727C53BF7002F84FB /* VideoModel.swift */,
+				5260F96B27C54554002F84FB /* Models */,
 				5260F96627C53BD2002F84FB /* Views */,
 				5260F95427C3F6B8002F84FB /* Assets.xcassets */,
 				5260F95927C3F6B8002F84FB /* LaunchScreen.storyboard */,
@@ -86,10 +88,19 @@
 			isa = PBXGroup;
 			children = (
 				5260F95227C3F6B7002F84FB /* ContentView.swift */,
-				5260F96227C3FA37002F84FB /* ChanelView.swift */,
+				5260F96227C3FA37002F84FB /* ChannelView.swift */,
 				5260F96427C52A4A002F84FB /* VideoView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5260F96B27C54554002F84FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5260F96927C544E5002F84FB /* ChannelData.swift */,
+				5260F96727C53BF7002F84FB /* VideoModel.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,9 +176,10 @@
 				5260F94F27C3F6B7002F84FB /* AppDelegate.swift in Sources */,
 				5260F96827C53BF7002F84FB /* VideoModel.swift in Sources */,
 				5260F96527C52A4A002F84FB /* VideoView.swift in Sources */,
-				5260F96327C3FA37002F84FB /* ChanelView.swift in Sources */,
+				5260F96327C3FA37002F84FB /* ChannelView.swift in Sources */,
 				5260F95127C3F6B7002F84FB /* SceneDelegate.swift in Sources */,
 				5260F95327C3F6B7002F84FB /* ContentView.swift in Sources */,
+				5260F96A27C544E5002F84FB /* ChannelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

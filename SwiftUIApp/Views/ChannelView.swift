@@ -1,28 +1,23 @@
 //
-//  VideoView.swift
+//  ChannelView.swift
 //  SwiftUIApp
 //
-//  Created by MacBookPro on 22.02.2022.
+//  Created by MacBookPro on 21.02.2022.
 //
 
 import SwiftUI
 
-
-struct VideoView: View {
+struct ChannelView: View {
+    @EnvironmentObject var channelData: ChannelData
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @EnvironmentObject var channelData: ChannelData
-    @Binding var videoTitle: String
-    @Binding var videoDescription: String
-
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
-                TextField("Video title", text: $videoTitle)
-                TextField("Video description", text: $videoDescription)
+                TextField("Channel Name", text: $channelData.chanelName)
                 Divider()
                 Button(action: {
-                    print("123")
                     self.presentationMode.wrappedValue.dismiss()
                 }, label: {
                     Text("Dismiss this VC")
@@ -34,8 +29,8 @@ struct VideoView: View {
     }
 }
 
-//struct VideoView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        VideoView()
-//    }
-//}
+struct ChanelView_Previews: PreviewProvider {
+    static var previews: some View {
+        ChannelView()
+    }
+}
