@@ -13,6 +13,8 @@
 		5260F95527C3F6B8002F84FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5260F95427C3F6B8002F84FB /* Assets.xcassets */; };
 		5260F95827C3F6B8002F84FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5260F95727C3F6B8002F84FB /* Preview Assets.xcassets */; };
 		5260F95B27C3F6B8002F84FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5260F95927C3F6B8002F84FB /* LaunchScreen.storyboard */; };
+		5260F96327C3FA37002F84FB /* ChanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5260F96227C3FA37002F84FB /* ChanelView.swift */; };
+		5260F96527C52A4A002F84FB /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5260F96427C52A4A002F84FB /* VideoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5260F95727C3F6B8002F84FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5260F95A27C3F6B8002F84FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5260F95C27C3F6B8002F84FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5260F96227C3FA37002F84FB /* ChanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChanelView.swift; sourceTree = "<group>"; };
+		5260F96427C52A4A002F84FB /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				5260F94E27C3F6B7002F84FB /* AppDelegate.swift */,
 				5260F95027C3F6B7002F84FB /* SceneDelegate.swift */,
 				5260F95227C3F6B7002F84FB /* ContentView.swift */,
+				5260F96227C3FA37002F84FB /* ChanelView.swift */,
+				5260F96427C52A4A002F84FB /* VideoView.swift */,
 				5260F95427C3F6B8002F84FB /* Assets.xcassets */,
 				5260F95927C3F6B8002F84FB /* LaunchScreen.storyboard */,
 				5260F95C27C3F6B8002F84FB /* Info.plist */,
@@ -146,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5260F94F27C3F6B7002F84FB /* AppDelegate.swift in Sources */,
+				5260F96527C52A4A002F84FB /* VideoView.swift in Sources */,
+				5260F96327C3FA37002F84FB /* ChanelView.swift in Sources */,
 				5260F95127C3F6B7002F84FB /* SceneDelegate.swift in Sources */,
 				5260F95327C3F6B7002F84FB /* ContentView.swift in Sources */,
 			);
